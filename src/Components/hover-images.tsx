@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import "./HoverImages.css"; // 👈 import the CSS file
 
 const imageData = [
   {
@@ -35,44 +36,32 @@ const imageData = [
   {
     title: "Cruise Port Transfers",
     disciption:
-      "Cruise Port Transfers Smooth, punctual transfers between London and Southampton, Dover and other major UK cruise ports.",
+      "Smooth, punctual transfers between London and Southampton, Dover and other major UK cruise ports.",
     image: "/images/Image (5).png",
   },
 ];
+
 export default function HoverImages() {
   return (
-    <div className="flex gap-2">
-      {imageData.map((item, index) => {
-        return (
-          <div
-            key={index}
-            className="relative w-[220px] h-[448px] group overflow-hidden rounded-lg"
-          >
-            {/* Text overlay */}
-            <div
-              className="absolute z-[5] h-[448px ]  p-4 flex flex-col justify-end group-hover:bottom-0 bottom-[-215px] transition-all duration-500 ease-out pt-[85%]  "
-              style={{
-                background:
-                  "linear-gradient(180deg, rgba(8, 16, 23, 0) 0%, #081017 76.92%)",
-              }}
-            >
-              <h3 className="text-[20px] font-bold leading-[1.0]">
-                {item.title}
-              </h3>
-              <p className="text-sm h-[200px] mt-1">{item.disciption}</p>
-            </div>
-            {/* Image */}
-
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={220}
-              height={448}
-              className="w-[220px] h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-            />
+    <div className="hover-images-container">
+      {imageData.map((item, index) => (
+        <div key={index} className="image-card">
+          {/* Overlay */}
+          <div className="overlay">
+            <h3>{item.title}</h3>
+            <p>{item.disciption}</p>
           </div>
-        );
-      })}
+
+          {/* Image */}
+          <Image
+            src={item.image}
+            alt={item.title}
+            width={220}
+            height={448}
+            className="image"
+          />
+        </div>
+      ))}
     </div>
   );
 }
