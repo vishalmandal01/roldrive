@@ -42,7 +42,7 @@ export default function OurLuxuryCarousel() {
       hours_pay: "220",
       round_trip: "255",
       fee: carFee,
-      img: "/Images/Car.png",
+      img: "/images/Car.png",
     },
     {
       title: "Range Rover Vogue",
@@ -51,7 +51,7 @@ export default function OurLuxuryCarousel() {
       hours_pay: "250",
       round_trip: "255",
       fee: carFee,
-      img: "/Images/Car.png",
+      img: "/images/Car.png",
     },
     {
       title: "BMW 7 Series",
@@ -60,7 +60,7 @@ export default function OurLuxuryCarousel() {
       hours_pay: "220",
       round_trip: "255",
       fee: carFee,
-      img: "/Images/Car.png",
+      img: "/images/Car.png",
     },
     {
       title: "Rolls Royce Ghost",
@@ -69,7 +69,7 @@ export default function OurLuxuryCarousel() {
       hours_pay: "220",
       round_trip: "255",
       fee: carFee,
-      img: "/Images/Car.png",
+      img: "/images/Car.png",
     },
     {
       title: "Bentley Flying Spur",
@@ -78,7 +78,7 @@ export default function OurLuxuryCarousel() {
       hours_pay: "220",
       round_trip: "200",
       fee: carFee,
-      img: "/Images/Car.png",
+      img: "/images/Car.png",
     },
   ];
 

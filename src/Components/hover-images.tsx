@@ -48,31 +48,28 @@ export default function HoverImages() {
             key={index}
             className="relative w-[220px] h-[448px] group overflow-hidden rounded-lg"
           >
-            {/* Image */}
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={220}
-              height={448}
-              className="w-[220px] h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-            />
-
             {/* Text overlay */}
-            {/* <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/40 to-transparent  translate-y-[100px]  group-hover:translate-y-0 transition-all duration-500 ease-out p-4 text-white">
-              <h3 className="text-[20px] font-bold">{item.title}</h3>
-              <p className="text-sm">{item.disciption}</p>
-            </div> */}
-
             <div
-              className="absolute inset-0  p-4 flex flex-col justify-end group-hover:translate-y-0 translate-y-[220px] transition-all duration-500 ease-out "
+              className="absolute z-[5] h-[448px ]  p-4 flex flex-col justify-end group-hover:bottom-0 bottom-[-215px] transition-all duration-500 ease-out pt-[85%]  "
               style={{
                 background:
                   "linear-gradient(180deg, rgba(8, 16, 23, 0) 0%, #081017 76.92%)",
               }}
             >
-              <h3 className="text-[20px] font-bold">{item.title}</h3>
-              <p className="text-sm h-[200px] ">{item.disciption}</p>
+              <h3 className="text-[20px] font-bold leading-[1.0]">
+                {item.title}
+              </h3>
+              <p className="text-sm h-[200px] mt-1">{item.disciption}</p>
             </div>
+            {/* Image */}
+
+            <Image
+              src={item.image}
+              alt={item.title}
+              width={220}
+              height={448}
+              className="w-[220px] h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+            />
           </div>
         );
       })}

@@ -371,14 +371,14 @@ const ApplicationSetup = () => {
             </div>
             <div className="flex items-center gap-3 md:flex-row flex-col">
               <Image
-                src="/Images/google-play-store.png"
+                src="/images/google-play-store.png"
                 alt="google"
                 width={1920}
                 height={1080}
                 className=" md:h-[40px] md:w-[150px]   "
               />
               <Image
-                src="/Images/apple store.png"
+                src="/images/apple store.png"
                 alt="google"
                 width={1920}
                 height={1080}
@@ -387,7 +387,7 @@ const ApplicationSetup = () => {
             </div>
           </div>
           <Image
-            src={"/Images/mobile.png"}
+            src={"/images/mobile.png"}
             alt="mobile"
             width={1920}
             height={1080}
