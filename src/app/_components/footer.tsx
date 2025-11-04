@@ -22,13 +22,14 @@ export default function Footer() {
         <div className="grid grid-cols-6 text-white/60">
           {/* ====== Social Section ====== */}
           <div className="col-span-2 lg:space-y-6">
-            <Image
+            {/* <Image
               src="/svg/Logo.svg"
               alt="logo"
               width={150}
               height={150}
               className="h-[44px]"
-            />
+            /> */}
+            <Image src="/svg/logo.svg" alt="logo" width={150} height={50} />
             <p className="text-sm font-normal md:w-[60%]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore.

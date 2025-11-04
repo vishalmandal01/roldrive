@@ -121,7 +121,7 @@ export default function HeroForm() {
               </label>
               <div className="flex text-[#B2B2B2] items-center bg-[#223544D9] border-[1px] border-[#FFFFFF4D] rounded-lg px-3 py-1">
                 <Image
-                  src="/svg/location.svg"
+                  src="/svg/calendar.svg"
                   alt="phone"
                   width={20}
                   height={20}
@@ -135,7 +135,7 @@ export default function HeroForm() {
               </label>
               <div className="flex text-[#B2B2B2] items-center bg-[#223544D9] border-[1px] border-[#FFFFFF4D] rounded-lg px-3 py-1">
                 <Image
-                  src="/svg/location.svg"
+                  src="/svg/clock.svg"
                   alt="phone"
                   width={20}
                   height={20}

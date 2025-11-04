@@ -97,7 +97,7 @@ export default function SpecialRequirementForm() {
           <textarea
             id=""
             placeholder="Describe your requirements"
-            className="w-full  text-[#B2B2B2] bg-[#223544D9] border-[1px] border-[#FFFFFF4D] rounded-lg px-1 py-1"
+            className="w-full  text-[#B2B2B2] bg-[#223544D9] border-[1px] border-[#FFFFFF4D] rounded-lg px-2 py-2"
           />
         </div>
 
