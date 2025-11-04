@@ -18,7 +18,7 @@ interface MenuItemType {
 export default function Header() {
   return (
     <div className="fixed top-0 h-[72px] w-full z-30 transition shadow-lg bg-[#223544]">
-      <div className="max-w-[1360px] px-8 mx-auto flex justify-between items-center h-full ">
+      <div className="max-w-[1360px] px-4 md:px-8 lg:px-0 mx-auto flex justify-between items-center h-full ">
         <div className="flex items-center">
           <Image src="/svg/logo.svg" alt="logo" width={150} height={50} />
           <div className="hidden md:flex gap-3  lg:ml-10 text-white">
