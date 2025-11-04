@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -12,7 +12,7 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
@@ -25,3 +25,43 @@ body {
     text-wrap: balance;
   }
 }
+
+/* === === */
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  /* background-color: var(--muted); */
+  background-color: #8d8d8d2a;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--ring);
+  border-radius: 0px;
+  border: 0px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--foreground);
+}
+
+@media screen and (max-width: 420px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 2px;
+  }
+}
+
+/* === Firefox === */
+* {
+  scrollbar-width: thin; /* Same effect */
+  scrollbar-color: #f66523 transparent; /* thumb | track */
+}
+
+/* === glass effect === */
